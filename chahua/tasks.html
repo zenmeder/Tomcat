@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>sc.chinaz.com</title>
+    
+    <!-- JQuery UI CSS Framework -->
+    <link rel="stylesheet" type="text/css" href="css/ui-lightness/jquery-ui-1.8.4.custom.css"  />
+    <!-- End JQuery UI CSS Framework -->
+	
+    <!-- General Styles common for all pages -->
+    <link rel="stylesheet" type="text/css" href="css/globals.css" />
+    <link rel="stylesheet" type="text/css" href="css/commons.css" />
+    <link rel="stylesheet" type="text/css" href="css/plugins.css" />
+    <!-- END General Styles -->
+    
+    <!-- Current Theme styles. These are changed via theme switcher -->	<link rel="stylesheet" id="active-theme-globals" type="text/css" href="themes/sleek-wood/css/globals.css" />
+	<link rel="stylesheet" id="active-theme-commons" type="text/css" href="themes/sleek-wood/css/commons.css" />
+	<link rel="stylesheet" id="active-theme-plugins" type="text/css" href="themes/sleek-wood/css/plugins.css" /> <!-- END Current Theme styles -->
+</head>
+
+<body>	
+	<!-- Container -->
+	<div id="container">
+    	<!-- Header -->
+        <div id="header">
+    		<div id="header-top">
+            	<div id="top-block-left">
+                	<p>You are signed in as: John Doe [&nbsp;Moderator&nbsp;]</p>
+                </div>
+                <ul id="top-toolbox">
+                	<li><a href="#" id="settings-link">Settings</a></li>
+                    <li><a href="#" id="profile-link">Edit Profile</a></li>
+                    <li><a href="login.html" id="logout-link">Logout</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div id="header-middle">
+           		<a href="dashboard.html" id="logo">Real World Admin</a>
+            </div>
+            <!-- Top Menu -->
+            <div id="menu">
+            	<ul class="topnav">
+                    <li><a href="dashboard.html" id="menu-dashboard">Dashboard</a></li>
+                    <li><a href="page.html" id="menu-page">Sample Page</a></li>
+                    <li><a href="assets.html" id="menu-asset">Assets</a></li>
+                    <li><a href="events.html" id="menu-event">Events</a></li>
+                    <li><a href="reports.html" id="menu-report">Reports</a></li>
+                    <li id="active-item"><a href="tasks.html" id="menu-task">Tasks</a></li>
+                    <li class="right"><a href="themes.html" id="menu-theme">Themes</a></li>
+                    <li class="right" id="last"><a href="#" id="menu-layout">Layouts</a>
+                        <!-- Dropdown Part -->
+                        <ul class="subnav">
+                            <li><a href="#" id="fixed-layout">Fixed Layout</a></li>
+                            <li><a href="#" id="liquid-layout">Liquid Layout</a></li>
+                        </ul>
+                        <!-- End Dropdown Part -->
+                    </li>
+                </ul>
+		  	</div>
+            <!-- END Menu -->
+        </div>
+        <!-- END Header -->
+        <div class="clear"></div> 
+        <!-- Content -->
+ 		<div id="content">
+        	<div id="status"></div><!-- Container div for interactive messages -->
+            <!-- Information Block -->	
+            <div class="status info">
+            	Features to explore: Click on table rows to expand and see the comments concerning the task. 
+                <br /> Hover on participant members photos to see the info tooltips.
+                <br /> Filter the members via dropdown select box and watch the animation.
+            </div>
+            <!-- END Information Block -->	
+            <h2 class="top-title">Tasks</h2> <!-- Page Title -->
+          	<form method="post" action="" name="form">
+                <!-- Tasks Table -->	
+                <table class="list-table">
+                    <thead>
+                        <tr>
+                            <th width="20">&nbsp;</th>
+                            <th>Priority</th>
+                            <th>Task Name</th>
+                            <th>Deadline</th>
+                            <th>Progress</th>
+                            <th>Comments</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="parent" id="row-1">
+                            <td><div class="arrow"></div></td>
+                            <td><span class="button submit medium green-back fixed-width-100 ui-corner-all">Normal</span></td>
+                            <td>Fix "categories" page bug.</td>
+                            <td><input type="text" class="datepicker" value="09/15/2010" /></td>
+                            <td><span class="progressBar" id="pb2">75%</span></td>
+                            <td>Comments</td>
+                        </tr>
+                        <!-- Extendable Row : Comments Block -->	
+                        <tr class="child-row-1">
+                            <td colspan="6">
+                                <h3 class="comments-main-title">Comments</h3>
+                                <a href="#" class="add-comment">Add comment</a>
+                                <div class="comment-block">
+                                    <h4 class="commenter">
+                                        <a href="#">John at Dec 04, 19:33</a> 
+                                        <a href="#" class="reply">Reply</a>
+                                    </h4>
+                                  	<div class="clear"></div>
+                                    <img src="images/demo/user3_48.png" alt="" />
+                                    <p class="left">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+                                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
+                                        quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+                                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, 
+                                        vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui 
+                                        blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                                    </p>
+                                    <div class="clear"></div>
+                                    <h4 class="commenter">
+                                        <a href="#">Jane at Dec 04, 22:14</a>
+                                        <a href="#" class="reply">Reply</a>
+                                    </h4>
+                                    <div class="clear"></div>
+                                    <img src="images/demo/user6_48.png" alt="" />
+                                     <p class="left">
+                                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, 
+                                        vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui 
+                                        blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi..
+                                    </p>
+                                    <div class="clear"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- END Extendable Row : Comments Block -->	
+                        <tr class="parent" id="row-2">
+                            <td><div class="arrow"></div></td>
+                            <td><span class="button submit medium grey-back fixed-width-100 ui-corner-all">Low</span></td>
+                            <td>Fix "categories" page bug.</td>
+                            <td><input type="text" class="datepicker" value="10/04/2010" /></td>
+                            <td><span class="progressBar" id="pb1">40%</span></td>
+                            <td>Comments</td>
+                        </tr>
+                        <!-- Extendable Row : Comments Block -->
+                        <tr class="child-row-2">
+                            <td colspan="6">
+                                 <div class="comment-block">
+                                    <h4 class="commenter">
+                                        <a href="#">John at Dec 04, 19:33</a> 
+                                        <a href="#" class="reply">Reply</a>
+                                    </h4>
+                                    <div class="clear"></div>
+                                    <img src="images/demo/user3_48.png" alt="" />
+                                    <p class="left">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+                                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
+                                        quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+                                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, 
+                                        vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui 
+                                        blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                                    </p>
+                                    <div class="clear"></div>
+                                    <h4 class="commenter">
+                                        <a href="#">Jane at Dec 04, 22:14</a> 
+                                        <a href="#" class="reply">Reply</a>
+                                    </h4>
+                                    <div class="clear"></div>
+                                    <img src="images/demo/user6_48.png" alt="" />
+                                     <p class="left">
+                                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, 
+                                        vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui 
+                                        blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi..
+                                    </p>
+                                    <div class="clear"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- END Extendable Row : Comments Block -->	
+                          <tr class="parent" id="row-3">
+                            <td><div class="arrow"></div></td>
+                            <td><span class="button submit medium red-back fixed-width-100 ui-corner-all">Urgent</span></td>
+                            <td>Fix "categories" page bug.</td>
+                             <td><input type="text" class="datepicker" value="01/01/2011" /></td>
+                            <td><span class="progressBar" id="pb3">40%</span></td>
+                            <td>Comments</td>
+                        </tr>
+                        <!-- Extendable Row : Comments Block -->	
+                        <tr class="child-row-3">
+                            <td colspan="6">
+                                 <div class="comment-block">
+                                    <h4 class="commenter">
+                                        <a href="#">John at Dec 04, 19:33</a> 
+                                        <a href="#" class="reply">Reply</a>
+                                    </h4>
+                                    <div class="clear"></div>
+                                    <img src="images/demo/user3_48.png" alt="" />
+                                    <p class="left">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+                                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
+                                        quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+                                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, 
+                                        vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui 
+                                        blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                                    </p>
+                                    <div class="clear"></div>
+                                    <h4 class="commenter">
+                                        <a href="#">Jane at Dec 04, 22:14</a> 
+                                        <a href="#" class="reply">Reply</a>
+                                    </h4>
+                                    <div class="clear"></div>
+                                    <img src="images/demo/user6_48.png" alt="" />
+                                     <p class="left">
+                                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, 
+                                        vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui 
+                                        blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi..
+                                    </p>
+                                    <div class="clear"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- END Extendable Row : Comments Block -->	
+                        <tr>
+                            <td></td>
+                            <td><span class="button submit medium orange-back fixed-width-100 ui-corner-all">Medium</span></td>
+                            <td>Fix "categories" page bug.</td>
+                            <td><input type="text" class="datepicker" value="04/08/2012" /></td>
+                            <td><span class="progressBar" id="pb4">40%</span></td>
+                            <td>Comments</td>
+                        </tr>
+                    </tbody>
+                </table>
+                 <!-- End Tasks Table -->	
+            </form>
+            <hr /><!-- Divider -->
+            <h2 class="top-title">Participant Members</h2>
+            <!-- Filter Participants -->	
+            <form method="post" action="" id="filterable-form">
+                <label for="list-filter">Show:</label>
+                <select id="list-filter">
+                    <option value="#all">All</option>            
+                    <option value="#designer">Designers</option>      
+                    <option value="#developer">Developers</option>
+                    <option value="#manager">Managers</option>
+                    <option value="#support">Support Staff</option>
+                    <option value="#photography">Photographers</option>
+                </select> 
+           	</form>
+            <!-- END Filter Participants -->
+            
+            <!-- All participants list -->		
+            <ul id="participants-list">
+                <li class="developer partner">
+                    <a href="#" title="Tasks assigned: Lorem Ipsum 45,  Lorem Ipsum 747"><img src="images/demo/member.jpg" alt="" /></a>
+                    <p>John Johnson</p>
+                </li>
+                <li class="designer manager">
+                    <a href="#" title="Tasks assigned: Lorem Ipsum 25,  Lorem Ipsum 777"><img src="images/demo/member.jpg" alt="" /></a>
+                    <p>Joe Dassin</p>
+                </li>
+                <li class="developer support">
+                    <a href="#" title="Tasks assigned: Lorem Ipsum 62,  Lorem Ipsum 777"><img src="images/demo/member.jpg" alt="" /></a>
+                    <p>William Shakespare</p>
+                </li>
+                <li class="photography manager">
+                    <a href="#" title="Tasks assigned: Lorem Ipsum 2,  Lorem Ipsum 777">
+                    	<img src="images/demo/member.jpg" alt="" />
+                    </a>
+                    <p>Jane Doe</p>
+                </li>
+                <li class="designer suuport">
+                    <a href="#" title="Tasks assigned: Lorem Ipsum 2,  Lorem Ipsum 4">
+                    	<img src="images/demo/member.jpg" alt="" />
+                    </a>
+                    <p>Lisa Spears</p>
+                </li>
+                <li class="developer photography">
+                    <a href="#" title="Tasks assigned: Lorem Ipsum 1"><img src="images/demo/member.jpg" alt="" /></a>
+                    <p>Doe Jones</p>
+                </li>
+                <li class="manager developer support">
+                    <a href="#" title="A Geek Guy"><img src="images/demo/member.jpg" alt="" /></a>
+                    <p>Takamaka Simonaka</p>
+                </li>
+                <li class="designer photography support">
+                    <a href="#" title="Main Role: Not letting others to Lorem Ipsum around"><img src="images/demo/member.jpg" alt="" /></a>
+                    <p>George Doe</p>
+                </li>
+                <li class="photography support">
+                    <a href="#" title="Main Role: Lorem Ipsuming around"><img src="images/demo/member.jpg" alt="" /></a>
+                    <p>X-Man</p>
+                </li>
+            </ul>
+            <!-- END all participants list -->			
+            <div class="clear"></div> 	
+      </div> 
+         <!-- END Content -->  
+   	</div>
+    <!-- END Container -->  
+    
+    <!-- Footer Container -->
+    <div id="footer-container">
+        <div id="footer">
+            <div id="footer-logo">
+    			<p id="copyright">Copyright &copy; 2010 By Weblusive.</p>
+            </div>
+            <!-- Footer Menu -->
+            <ul class="menu">
+             	<li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="page.html">Sample Page</a></li>
+    			<li><a href="assets.html">Assets</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="tasks.html">Tasks</a></li>
+                <li><a href="themes.html">Themes</a></li>
+            </ul>
+            <!-- END Footer Menu -->
+           <div class="clear"></div>
+        </div>
+    </div>
+    <!-- END Footer Container -->
+    
+  	<!--[if lte IE 6]><script src="js/ie6/warning.js"></script><script>window.onload=function(){e("js/ie6/")}</script>
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery.js"></script>
+  	<script type="text/javascript" src="js/jquery-ui-1.8.4.custom.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.uniform.min.js" ></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.tools.min.js" ></script>
+    <script type="text/javascript" src="js/jquery.progressbar.min.js"></script>
+    <script type="text/javascript" src="js/filterable.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		<!--
+		$(document).ready(function(){
+			/* Initialize Progress Bar. Change the images from if you want colorful bars.  /
+			/  Several color are available.                                               */
+			$("#participants-list li a[title]").tooltip();
+			$("#pb1").progressBar(80, { barImage: 'images/progressbar/progressbg_black.gif'} );					   
+			$("#pb2").progressBar(65, { barImage: 'images/progressbar/progressbg_black.gif'} );
+			$("#pb3").progressBar(45, { barImage: 'images/progressbar/progressbg_black.gif'} );
+			$("#pb4").progressBar(20, { barImage: 'images/progressbar/progressbg_black.gif'} );
+			
+			/* Initialize 'Filterable Plugin'. Filter based on select box's chosen value. */
+			var myFilterable = $('#participants-list').filterable();
+			var mySelect = $('#list-filter');
+			mySelect.change(function() {
+				var index = mySelect[0].selectedIndex;
+				var element = mySelect[0].options[index];
+				var tag = $(element).attr('value'); // jQuery variant
+				myFilterable.trigger('filter', tag);
+			});
+
+		});
+		
+		// Convert the standard form elements to JQuery Uniform's ones.
+		$(function(){
+        	$("input, textarea, select, button").uniform();
+      	});
+		
+		// Make Expandable Rows.
+		$(function() {
+			$('tr.parent')
+				.css("cursor","pointer")
+				.attr("title","Click to expand/collapse")
+				.click(function(){
+					$(this).siblings('.child-'+this.id).toggle();
+					$(this).find(".arrow").toggleClass("up");
+				});
+			$('tr[class^=child-]').hide().children('td');
+		});
+		
+		// Initialize Jquery UI's inline date picker.
+		$(function() {
+		$( ".datepicker" ).datepicker({
+			showOn: "button",
+			buttonImage: "images/icons/calendar.png",
+			buttonImageOnly: true,
+			buttonText: 'Choose a deadline'
+		});
+	});
+	-->
+	</script>
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
+

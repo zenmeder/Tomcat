@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<title>sc.chinaz.com</title>
+    
+    <!-- JQuery UI CSS Framework -->
+    <link rel="stylesheet" type="text/css" href="css/ui-lightness/jquery-ui-1.8.4.custom.css"  />
+    <!-- End JQuery UI CSS Framework -->
+	
+    <!-- Styles specific for current page -->
+    <link rel="stylesheet" type="text/css" href="js/markitup/skins/markitup/style.css" />
+	<link rel="stylesheet" type="text/css" href="js/markitup/sets/html/style.css" />
+    <link rel="stylesheet" type="text/css" href="js/jqplot/jquery.jqplot.css" />
+     <!-- END Specific Styles -->
+    
+    <!-- General Styles common for all pages -->
+    <link rel="stylesheet" type="text/css" href="css/globals.css" />
+    <link rel="stylesheet" type="text/css" href="css/commons.css" />
+    <link rel="stylesheet" type="text/css" href="css/plugins.css" />
+    <!-- END General Styles -->
+    
+    <!-- Current Theme styles. These are changed via theme switcher -->	
+    <link rel="stylesheet" id="active-theme-globals" type="text/css" href="themes/sleek-wood/css/globals.css" />
+	<link rel="stylesheet" id="active-theme-commons" type="text/css" href="themes/sleek-wood/css/commons.css" />
+	<link rel="stylesheet" id="active-theme-plugins" type="text/css" href="themes/sleek-wood/css/plugins.css" /> 
+    <!-- END Current Theme styles -->
+</head>
+
+<body>	
+	<!-- Container -->
+	<div id="container">
+    	<!-- Header -->
+        <div id="header">
+    		<div id="header-top">
+            	<div id="top-block-left">
+                	<p>You are signed in as: John Doe [&nbsp;Moderator&nbsp;]</p>
+                </div>
+                <ul id="top-toolbox">
+                	<li><a href="#" id="settings-link">Settings</a></li>
+                    <li><a href="#" id="profile-link">Edit Profile</a></li>
+                    <li><a href="login.html" id="logout-link">Logout</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div id="header-middle">
+           		<a href="dashboard.html" id="logo">Real World Admin</a>
+            </div>
+            <!-- Top Menu -->
+            <div id="menu">
+            	<ul class="topnav">
+                    <li id="active-item"><a href="dashboard.html" id="menu-dashboard">Dashboard</a></li>
+                    <li><a href="page.html" id="menu-page">Sample Page</a></li>
+                    <li><a href="assets.html" id="menu-asset">Assets</a></li>
+                    <li><a href="events.html" id="menu-event">Events</a></li>
+                    <li><a href="reports.html" id="menu-report">Reports</a></li>
+                    <li><a href="tasks.html" id="menu-task">Tasks</a></li>
+                    <li class="right"><a href="themes.html" id="menu-theme">Themes</a></li>
+                    <li class="right" id="last"><a href="#" id="menu-layout">Layouts</a>
+                        <!-- Dropdown Part -->
+                        <ul class="subnav">
+                            <li><a href="#" id="fixed-layout">Fixed Layout</a></li>
+                            <li><a href="#" id="liquid-layout">Liquid Layout</a></li>
+                        </ul>
+                        <!-- End Dropdown Part -->
+                    </li>
+                </ul>
+		  	</div>
+            <!-- END Menu -->
+        </div>
+        <!-- END Header -->
+        <div class="clear"></div> 
+        <!-- Content -->
+ 		<div id="content">
+        	<h2 class="top-title">Dashboard</h2>
+            <!-- Drag & drop widgets you see on the live page are called portlets. We have got 3 columns in which portlets reside. -->
+            <div class="column">
+             	<div class="portlet" id="widget-1">
+                    <!-- 'Quick Announcement' widget featuring Jquery MarkitUP WYSIWYG Editor -->
+                    <div class="portlet-header">Quick Announcement</div>
+            
+                    <div class="portlet-content">
+                        <form method="post" action="">
+                            <textarea name="pagetext" id="pagetext" cols="40" rows="10"></textarea>
+                            <input type="submit" class="submit right-aligned ui-corner-all" value="Publish" />
+                        </form>
+                    </div>
+                </div>
+                 <div class="portlet"  id="widget-2">
+                 	<!-- 'Recent Products' widget with Jquery UI Scrolling element -->
+                    <div class="portlet-header">Recent Products</div>
+                    <div class="portlet-content">
+                    	<div class="scroll-pane ui-corner-all"> 
+                            <div class="scroll-content"> 
+                                <div class="scroll-content-item">
+                                	<img src="images/demo/backpack.png" alt="" width="64" height="64" />
+                                	<p>Backpack</p>
+                                </div> 
+                                <div class="scroll-content-item">
+                                	<img src="images/demo/briefcase.png" alt="" width="64" height="64" />
+                                	<p>Briefcase</p>
+                                </div>
+                                 <div class="scroll-content-item">
+                                	<img src="images/demo/purse.png" alt="" width="64" height="64" />
+                                	<p>Purse</p>
+                                </div>
+                                 <div class="scroll-content-item">
+                                	<img src="images/demo/sportsbag.png" alt="" width="64" height="64" />
+                                	<p>Sports bag</p>
+                                </div>
+                                <div class="scroll-content-item">
+                                	<img src="images/demo/suitcase.png" alt="" width="64" height="64" />
+                                	<p>Suitcase</p>
+                                </div>
+                            </div> 
+                            <div class="scroll-bar-wrap ui-widget-content ui-corner-bottom"> 
+                                <div class="scroll-bar"></div> 
+                            </div> 
+                        </div> 
+                    
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column">
+            	<div class="portlet"  id="widget-3">
+                    <div class="portlet-header">Information Block</div>
+                    <div class="portlet-content">
+                      <p class="info-block">
+                      	Welcome to Real World Admin - an advanced administration interface template to suit all your needs. 
+                      	Please follow the information blocks throughout site when browsing. They will help you explore all
+                      	the hidden functions of this beautiful template.
+                      </p>
+                    </div>
+                </div>
+                 <div class="portlet"  id="widget-4">
+                    <div class="portlet-header">Pending Tasks</div>
+                    <div class="portlet-content">
+                        <!-- Tasks widget with accordion -->
+                        <div id="accordion">
+                            <h3>
+                            	<a href="#">Task 1</a>
+                            	<span class="task-icon high-priority">Urgent</span>
+                            </h3>
+                        	<div style="background:#FEFEFE">
+                                <p>
+                                Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                                ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                                amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                                odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                                </p>
+                            </div>
+                            
+                            <h3>
+                            	<a href="#">Task 2</a>
+                            	<span class="task-icon medium-priority">Medium</span>
+                            </h3>
+                           	<div style="background:#FEFEFE">
+                                <p>
+                                Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                                purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                                velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                                suscipit faucibus urna.
+                                </p>
+                            </div>
+                            
+                            <h3>
+                            	<a href="#">Task 3</a>
+                                <span class="task-icon low-priority">Normal</span>
+                            </h3>
+                            <div style="background:#FEFEFE">
+                                <p>
+                                Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                                Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                                ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                                lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                                </p>
+                            </div>
+                        </div>
+    				 </div>
+                </div>
+                <div class="portlet"  id="widget-5">
+                	<!-- 'New Members' widget with spy effect -->
+                    <div class="portlet-header">New Members</div>
+                    <div class="portlet-content">
+                     	<div id="new-members-widget">
+                            <ul class="members-list">
+                                <li>
+                                	<img width="48" height="48" src="images/demo/user1_48.png" alt="" />
+                                    <h5><a href="#" title="View round">Member 1</a></h5>
+                                   	<p class="member-info">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p><span></span>
+                                </li>
+                                <li>
+                                	<img width="48" height="48" src="images/demo/user3_48.png" alt="" />
+                                    <h5><a href="#" title="View round">Member 2</a></h5>
+                                   	<p class="member-info">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p><span></span>
+                                </li>
+                                <li>
+                                	<img width="48" height="48" src="images/demo/user4_48.png" alt="" />
+                                    <h5><a href="#" title="View round">Member 3</a></h5>
+                                   	<p class="member-info">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p><span></span>
+                                </li>
+                                <li>
+                                	<img width="48" height="48" src="images/demo/user6_48.png" alt="" />
+                                    <h5><a href="#" title="View round">Member 4</a></h5>
+                                   	<p class="member-info">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p><span></span>
+                                </li>
+                                 <li>
+                                	<img width="48" height="48" src="images/demo/user7_48.png" alt="" />
+                                    <h5><a href="#" title="View round">Member 5</a></h5>
+                                   	<p class="member-info">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p><span></span>
+                                </li>
+                            </ul>
+                        </div>    
+                    </div>
+            
+                </div>
+            	
+            </div>
+            
+            <div class="column">
+            
+                <div class="portlet"  id="widget-6">
+                	<!-- JQPlot Chart -->
+                    <div class="portlet-header">Reports</div>
+                    <div class="portlet-content">
+                    	<div class="jqPlot" id="chart2" style="height:320px; width:100%"></div>
+                    </div>
+                </div>
+            
+                
+                <div class="portlet"  id="widget-7">
+                	<!-- JQuery UI Calendar -->
+                    <div class="portlet-header">Calendar</div>
+                    <div class="portlet-content"><div id="datepicker" style="width:100%"></div></div>
+                </div>
+            
+            </div>
+        </div>
+   		<!-- END Content -->
+ 	</div>
+  	<!-- END Container -->
+ 		
+  	<!-- Footer Container -->
+ 	<div id="footer-container">
+        <div id="footer">
+            <div id="footer-logo">
+    			<p id="copyright">Copyright &copy; 2010 By Weblusive.</p>
+            </div>
+            <!-- Footer Menu -->
+            <ul class="menu">
+             	<li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="page.html">Sample Page</a></li>
+    			<li><a href="assets.html">Assets</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="tasks.html">Tasks</a></li>
+                <li><a href="themes.html">Themes</a></li>
+            </ul>
+            <!-- END Footer Menu -->
+           <div class="clear"></div>
+        </div>
+    </div>
+    <!-- END Footer Container -->
+ 		
+  	<!--[if lte IE 6]><script src="js/ie6/warning.js"></script><script>window.onload=function(){e("js/ie6/")}</script>
+	<![endif]-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.4.custom.min.js"></script>
+    
+	 <!-- Custom Written scripts file -->
+	<script type="text/javascript" src="js/custom.js"></script>
+    
+	<script type="text/javascript" src="js/markitup/jquery.markitup.js"></script>
+    <script type="text/javascript" src="js/markitup/sets/html/set.js"></script>
+	
+	<!--[if IE]><script language="javascript" type="text/javascript" src="js/jqplot/excanvas.js"></script>
+	<![endif]-->
+    <script type="text/javascript" src="js/jqplot/jquery.jqplot.js"></script>
+   	<script type="text/javascript" src="js/jqplot/plugins/jqplot.categoryAxisRenderer.js"></script>
+	<script type="text/javascript" src="js/jqplot/plugins/jqplot.barRenderer.js"></script>
+   
+    <script type="text/javascript">
+		$(document).ready(function(){
+		<!-- Initialize Jquery MarkItUp -->
+			$("#pagetext").markItUp(mySettings);
+		
+			<!-- Initialize JQPlot for a custom chart demo -->
+			line1 = [[4, 1], [2, 2], [9, 3], [16, 4]];
+    		line2 = [[3, 1], [7, 2], [6.25, 3], [3.125, 4]];
+    		plot2 = $.jqplot('chart2', [line1, line2], {
+        	stackSeries: true,
+        	legend: {show: true,location: 'se'},
+        	title: 'Sales Report',
+        	seriesDefaults: {
+            	renderer: $.jqplot.BarRenderer,
+            	rendererOptions: {
+                	barDirection: 'horizontal',
+                	barPadding: 6,
+                	barMargin: 40
+            	}
+        	},
+        	series: [{
+            	label: '1st Qtr'
+        	},
+        	{
+            	label: '2nd Qtr'
+        	}],
+        	axes: {
+            	yaxis: {
+                	renderer: $.jqplot.CategoryAxisRenderer,
+                	ticks: ['Q1', 'Q2', 'Q3', 'Q4']
+            	},
+            	xaxis: {min: 0, max: 20, numberTicks:5}
+        	}
+    	});
+
+		});
+	</script>
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
+

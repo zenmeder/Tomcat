@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>sc.chinaz.com</title>
+    
+    <!-- JQuery UI CSS Framework -->
+    <link rel="stylesheet" type="text/css" href="css/ui-lightness/jquery-ui-1.8.4.custom.css"  />
+    <!-- End JQuery UI CSS Framework -->
+	
+    <!-- Styles specific for current page -->
+    <link rel="stylesheet" type="text/css" href="js/jqplot/jquery.jqplot.css" />
+     <!-- END Specific Styles -->
+    
+    <!-- General Styles common for all pages -->
+    <link rel="stylesheet" type="text/css" href="css/globals.css" />
+    <link rel="stylesheet" type="text/css" href="css/commons.css" />
+    <link rel="stylesheet" type="text/css" href="css/plugins.css" />
+    <!-- END General Styles -->
+    
+    <!-- Current Theme styles. These are changed via theme switcher -->	<link rel="stylesheet" id="active-theme-globals" type="text/css" href="themes/sleek-wood/css/globals.css" />
+	<link rel="stylesheet" id="active-theme-commons" type="text/css" href="themes/sleek-wood/css/commons.css" />
+	<link rel="stylesheet" id="active-theme-plugins" type="text/css" href="themes/sleek-wood/css/plugins.css" /> <!-- END Current Theme styles -->
+</head>
+
+<body>	
+	<!-- Container -->
+	<div id="container">
+    	<!-- Header -->
+        <div id="header">
+    		<div id="header-top">
+            	<div id="top-block-left">
+                	<p>You are signed in as: John Doe [&nbsp;Moderator&nbsp;]</p>
+                </div>
+                <ul id="top-toolbox">
+                	<li><a href="#" id="settings-link">Settings</a></li>
+                    <li><a href="#" id="profile-link">Edit Profile</a></li>
+                    <li><a href="login.html" id="logout-link">Logout</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div id="header-middle">
+           		<a href="dashboard.html" id="logo">Real World Admin</a>
+            </div>
+            <!-- Top Menu -->
+            <div id="menu">
+            	<ul class="topnav">
+                    <li><a href="dashboard.html" id="menu-dashboard">Dashboard</a></li>
+                    <li><a href="page.html" id="menu-page">Sample Page</a></li>
+                    <li><a href="assets.html" id="menu-asset">Assets</a></li>
+                    <li><a href="events.html" id="menu-event">Events</a></li>
+                    <li id="active-item"><a href="reports.html" id="menu-report">Reports</a></li>
+                    <li><a href="tasks.html" id="menu-task">Tasks</a></li>
+                    <li class="right"><a href="themes.html" id="menu-theme">Themes</a></li>
+                    <li class="right" id="last"><a href="#" id="menu-layout">Layouts</a>
+                        <!-- Dropdown Part -->
+                        <ul class="subnav">
+                            <li><a href="#" id="fixed-layout">Fixed Layout</a></li>
+                            <li><a href="#" id="liquid-layout">Liquid Layout</a></li>
+                        </ul>
+                        <!-- End Dropdown Part -->
+                    </li>
+                </ul>
+		  	</div>
+            <!-- END Menu -->
+        </div>
+        <!-- END Header -->
+        <div class="clear"></div> 
+        <!-- Content -->
+ 		<div id="content">
+        	<h2 class="top-title">Reports</h2> <!-- Page Title -->
+            
+            <!-- Container Divs for Various Charts --> 
+            <div id="chart1" class="plot chart-container"></div>
+            <div id="chartdiv" class="chart-container"></div>
+            <div id="chart2" class="plot chart-container"></div>
+            <div id="chart5" class="plot chart-container"></div>
+             <!-- END Container Divs for Various Charts --> 
+         </div> 
+         <!-- END Content -->  
+   	</div>
+    <!-- END Container -->  
+    
+    <!-- Footer Container -->
+    <div id="footer-container">
+        <div id="footer">
+            <div id="footer-logo">
+    			<p id="copyright">Copyright &copy; 2010 By Weblusive.</p>
+            </div>
+            <!-- Footer Menu -->
+            <ul class="menu">
+             	<li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="page.html">Sample Page</a></li>
+    			<li><a href="assets.html">Assets</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="tasks.html">Tasks</a></li>
+                <li><a href="themes.html">Themes</a></li>
+            </ul>
+            <!-- END Footer Menu -->
+           <div class="clear"></div>
+        </div>
+    </div>
+    <!-- END Footer Container -->
+    
+  	<!--[if lte IE 6]><script src="js/ie6/warning.js"></script><script>window.onload=function(){e("js/ie6/")}</script>
+	<![endif]-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.4.custom.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!--[if IE]><script language="javascript" type="text/javascript" src="js/jqplot/excanvas.js"></script>
+	<![endif]-->
+   	<!-- load jqplot and the whole bunch of its extending plugins -->    
+    <script language="javascript" type="text/javascript" src="js/jqplot/jquery.jqplot.js"></script>
+    <script language="javascript" type="text/javascript" src="js/jqplot/plugins/jqplot.bubbleRenderer.js"></script>
+    <script language="javascript" type="text/javascript" src="js/jqplot/plugins/jqplot.barRenderer.js"></script>
+	<script language="javascript" type="text/javascript" src="js/jqplot/plugins/jqplot.categoryAxisRenderer.js"></script>
+    <script language="javascript" type="text/javascript" src="js/jqplot/plugins/jqplot.pieRenderer.js"></script>
+    <script language="javascript" type="text/javascript" src="js/jqplot/plugins/jqplot.donutRenderer.js"></script>
+    <script language="javascript" type="text/javascript" src="js/jqplot/plugins/jqplot.highlighter.js"></script>
+    <script language="javascript" type="text/javascript" src="js/jqplot/plugins/jqplot.cursor.js"></script>
+    <script language="javascript" type="text/javascript" src="js/jqplot/plugins/jqplot.funnelRenderer.js"></script>
+    
+    <script language="javascript" type="text/javascript" src="js/jqplot/plugins/jqplot.canvasTextRenderer.js"></script>
+    <script language="javascript" type="text/javascript" src="js/jqplot/plugins/jqplot.canvasAxisTickRenderer.js"></script>
+    <script language="javascript" type="text/javascript" src="js/jqplot/plugins/jqplot.canvasAxisLabelRenderer.js"></script>
+
+    <!-- END: load jqplot -->
+
+    
+    <script language="javascript" type="text/javascript">
+	<!-- Initialize reports with custom given parameters
+    $(document).ready(function(){
+		var makes = ['Acura', 'Alfa Romeo', 'AM General', 'Aston Martin Lagonda Ltd.', 'Audi', 'BMW', 'Bugatti', 
+					 'Buick', 'Cadillac', 'Chevrolet', 'Citroen', 'DaimlerChrysler Corporation', 'Daewoo Motor Co.', 
+					 'Delorean Motor Company', 'Dodge', 'Ferrari', 'Fiat', 'Ford Motor Company', 'General Motors', 
+					 'GMC', 'Holden', 'Honda', 'Hummer', 'Hyundai', 'Infiniti', 'Isuzu', 'Jaguar Cars', 'Jeep', 
+					 'Jensen Motors', 'Kia', 'Laforza', 'Lamborghini', 'Lancia', 'Land Rover', 'Lincoln', 
+					 'Lotus Cars', 'Lexus', 'Maserati', 'Mazda', 'Mercedes-Benz', 'Mercury', 'MG', 'Minelli', 
+					 'The Mini Cooper', 'Mistubishi', 'Morgan Motor Co.', 'Mosler Automotive', 'Nissan', 'NUMMI', 
+					 'Oldsmobile', 'Opel', 'Packard', 'Panoz', 'Peugeot', 'Pontiac', 'Porsche', 'Proton', 
+					 'PSA Peugeot Citroen', 'Renault', 'Rolls-Royce', 'Rover Cars', 'Saab', 'Saturn', 'Shelby American', 
+					 'Skoda', 'Spectre Cars', 'Studebaker Motor Company', 'Subaru', 'Suzuki', 'Th!nk', 'Toyota', 
+					 'Toyota Motor Manufacturing - Georgetown, KY', 'TVR', 'Vauxhall', 'Volkswagen', 'Volvo', 'Zimmer Motor Cars'];
+    
+   		var arr = [];
+    	var l = 3 + Math.ceil(Math.random()*(makes.length-20));
+    	for (var i=0; i<7; i++) {
+        	arr.push([Math.round(Math.random() * 50), Math.round(Math.random() * 150), Math.round(400 + Math.random() * 900), makes[i]]);
+    	}
+    
+       	s1 = [[0.6, 2.6, 12, 'Ford'], [0.5, 3, 16, 'GM'], [1.3, 2, 17, 'VW'], [1.2, 1.2, 13, 'Mini'], [2.7, 1.5, 5], [1.7, 1.2, 4], [1.6, 2.9, 3], [0.3, 0.6, 2], [1.3, 2.2, 10, 'Franklin'], [1.1, 1.3, 13, 'Nissan'], [1, 1, 12, 'Chrysler'], [2, 2.5, 11, 'Audi']];
+    
+       	plot1 = $.jqplot('chart1',[arr],{
+           sortData: false,
+           title: 'Car Models Popularity Report',
+           seriesDefaults:{
+               renderer: $.jqplot.BubbleRenderer,
+               rendererOptions: {
+                   autoscalePointsFactor: -.15,
+                   // autoscaleMultiplier: 0.7,
+                   // autoscaleBubbles: false,
+                   // highlightMouseDown: false
+                   // varyBubbleColors: false
+                   bubbleAlpha: 0.6,
+                   highlightAlpha: 0.8
+               },
+               highlightMouseDown: true,
+               shadow: true,
+               shadowAlpha: 0.05
+           },
+           axesDefaults: {
+               // pad: 1.4
+           }
+       	});
+		l1 = [['Seoul', 1], ['Paris', 7], ['Singapore',3], ['Hong  Kong',5], ['Chicago', 2], ['New York', 9]];
+    	l2 = [11, 9, 5, 12, 14];
+    	l3 = [4, 8, 5, 3, 6];
+    	l4 = [12, 6, 13, 11, 2];
+    	l5 = [4, -3, 3, 6, 2, -2];
+
+		pop1980 = [7071639, 2968528, 3005072, 1595138, 789704, 1688210, 785940, 904599];
+		pop1990 = [7322564, 3485398, 2783726, 1630553, 983403, 1585577, 935933, 1006877];
+		pop2000 = [8008654, 3694644, 2896051, 1974152, 1322025, 1517550, 1160005, 1188603];
+		pop2008 = [8363710, 3833995, 2853114, 2242193, 1567924, 1447395, 1351305, 1279910];
+
+    	ticks = ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix", "Philadelphia", "San Antonio", "Dallas"];
+
+		  $.jqplot('chartdiv',  [[[1, 2],[3,5.12],[5,13.1],[7,33.6],[9,85.9],[11,219.9]]],
+	  { title:'Last Month Sales',
+		axes:{yaxis:{min:-10, max:240}},
+		series:[{color:'#5FAB78'}]
+	  });
+    
+    plot2 = $.jqplot('chart2',[pop1980, pop1990, pop2000, pop2008],{
+       title: 'Local Traffic',
+       legend: {
+           show: true
+       },
+       seriesDefaults: {
+           renderer: $.jqplot.BarRenderer,
+           rendererOptions: {
+               barPadding: 2
+           }
+       },
+       series: [
+          {label: 'September'},
+          {label: 'October'},
+          {label: 'November'},
+          {label: 'December'}
+       ],
+       axes: {
+           xaxis: {
+               label: 'City',
+               renderer: $.jqplot.CategoryAxisRenderer,
+               tickRenderer: $.jqplot.CanvasAxisTickRenderer,
+               labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+               ticks: ticks,
+               tickOptions: {
+                   angle: -30
+                }
+           },
+           yaxis: {
+               tickRenderer: $.jqplot.CanvasAxisTickRenderer,
+               max: 9000000,
+               min: 0,
+               tickOptions: {
+                   formatString: '%d',
+                   angle: -30
+                }
+           }
+       }
+    });
+    
+    plot5 = $.jqplot('chart5',[l1],{
+       title: 'International Traffic',
+       seriesDefaults: {
+           renderer: $.jqplot.PieRenderer
+       },
+       legend: {
+           show: true
+       }
+    });
+
+	});
+	-->
+	</script>
+
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>  	
+</body>
+</html>
+
